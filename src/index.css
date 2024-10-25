@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+@layer base {
+    /* .theme-dark {
+        --text: 233 235 247;
+        --btnText: 3 5 12;
+        --background: 3 5 12;
+        --primary: 150 163 228;
+        --secondary: 29 50 145;
+        --accent: 54 83 226;
+    }
+    .theme-light {
+        --text: 8 10 22;
+        --btnText: 243 245 252;
+        --background: 243 245 252;
+        --primary: 27 40 105;
+        --secondary: 110 132 226;
+        --accent: 29 57 201;
+    } */
+    .theme-dark {
+        --text: 230 225 227;
+        --background: 20 19 20;
+        --foreground: 28 27 29;
+        --primary: 69 69 90;
+        --highlightForeground: 42 41 43;
+        --highlightPrimary: 83 83 102;
+        --secondary: 85 63 93;
+        --highlightSecondary: 247 216 255;
+    }
+    .theme-light {
+        --text: 28 27 29;
+        --background: 254 251 255;
+        --foreground: 248 241 246;
+        --primary: 220 218 245;
+        --highlightForeground: 235, 228, 234;
+        --highlightPrimary: 205 203 228;
+        --secondary: 241 211 249;
+        --highlightSecondary: 70 20 48;
+    }
+}
+
+/* .darkMode {
+    --text: #e0e7ee;
+    --background: #070b0f;
+    --primary: #93b2d7;
+    --secondary: #254e7d;
+    --accent: 74 138 212;
+}
+
+.lightMode {
+    --text: #10171e;
+    --background: #f1f5f8;
+    --primary: #28476c;
+    --secondary: #81aad9;
+    --accent: #2b6cb6;
+}
+*/
+@keyframes bg-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -5%);
+    }
+    20% {
+        transform: translate(-10%, 5%);
+    }
+    30% {
+        transform: translate(5%, -10%);
+    }
+    40% {
+        transform: translate(-5%, 15%);
+    }
+    50% {
+        transform: translate(-10%, 5%);
+    }
+    60% {
+        transform: translate(15%, 0);
+    }
+    70% {
+        transform: translate(0, 10%);
+    }
+    80% {
+        transform: translate(-15%, 0);
+    }
+    90% {
+        transform: translate(10%, 5%);
+    }
+    100% {
+        transform: translate(5%, 0);
+    }
+}
