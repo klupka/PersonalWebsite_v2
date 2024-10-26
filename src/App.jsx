@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import bgVideo from "./assets/glitch_texture.mp4";
 import { experienceData, projectData } from "./data/data";
 import ExperienceCard from "./components/ExperienceCard";
 import ProjectCard from "./components/ProjectCard";
@@ -9,7 +8,7 @@ import {
     faMoon,
     faSun,
 } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import resumePDF from "./assets/Resume_Seth_Klupka.pdf";
 
 function App() {
@@ -51,21 +50,24 @@ function App() {
             <div
                 className={`transition-all duration-500 ease-in-out text-text bg-background h-full selection:bg-highlightPrimary selection:text-text`}
             >
-                <div className="flex h-full max-w-[1300px] mx-auto">
-                    <div className="w-[40%] h-screen sticky top-0">
-                        <div className="h-full flex flex-col justify-between pt-20 bg-foreground px-10 pb-10">
+                {/* Change to fully 1 column at 1025px and lower*/}
+                <div className="flex flex-col min-[1025px]:flex-row h-full max-w-[1300px] mx-auto">
+                    <div className="min-[1025px]:w-[40%] min-[1025px]:h-screen min-[1025px]:sticky min-[1025px]:top-0">
+                        <div className="h-full flex flex-col justify-between pt-10 min-[1025px]:pt-20 px-5 min-[1025px]:px-10 pb-10">
                             <div className="h-1/3">
-                                <div className="font-[500] text-[3.5rem] leading-[3rem]">
-                                    Seth Klupka
+                                <div className="flex flex-col gap-3">
+                                    <div className="font-[600] leading-[3rem] min-[1025px]:text-[3.5rem] text-[2.25rem]">
+                                        Seth Klupka
+                                    </div>
+                                    <div className="text-lg font-[500] leading-[1rem] xmt-1">
+                                        Software Engineer
+                                    </div>
+                                    <div className="text-text/70 w-[20rem] font-[300] mt-1">
+                                        Passionate about creating impactful,
+                                        user-friendly applications.
+                                    </div>
                                 </div>
-                                <div className="text-xl mt-3">
-                                    Software Engineer
-                                </div>
-                                {/* <div className="w-[25rem] mt-5 text-text/70">
-                                    I build seamless and intuitive user
-                                    experiences.
-                                </div> */}
-                                <div className="italic flex flex-col items-start justify-center gap-2 w-full mt-10">
+                                <div className="italic flex-col items-start justify-center gap-2 w-full mt-10 hidden min-[1025px]:flex">
                                     <button
                                         onClick={() => {
                                             window.scrollTo({
@@ -108,17 +110,17 @@ function App() {
                                 </div>
                             </div>
 
-                            <div className="h-1/2 flex items-end justify-between">
+                            <div className="h-1/2 flex items-end justify-between mt-5 min-[1025px]:mt-0">
                                 <div className="flex gap-5">
                                     <a
                                         className="bg-highlightForeground p-3 rounded-full group"
                                         href="https://github.com/klupka"
                                         target="_blank"
                                     >
-                                        <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1.5rem] h-[1.5rem]">
+                                        <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1rem] h-[1rem]">
                                             <FontAwesomeIcon
                                                 icon={faGithub}
-                                                className="text-2xl"
+                                                className="h-6 w-6"
                                             />
                                         </div>
                                     </a>
@@ -127,10 +129,10 @@ function App() {
                                         href="https://www.linkedin.com/feed/"
                                         target="_blank"
                                     >
-                                        <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1.5rem] h-[1.5rem]">
+                                        <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1rem] h-[1rem]">
                                             <FontAwesomeIcon
                                                 icon={faLinkedin}
-                                                className="text-2xl"
+                                                className="h-6 w-6"
                                             />
                                         </div>
                                     </a>
@@ -139,7 +141,7 @@ function App() {
                                     className="border-2 border-highlightForeground p-3 rounded-full group overflow-hidden"
                                     onClick={() => setIsDarkMode(!isDarkMode)}
                                 >
-                                    <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1.5rem] h-[1.5rem]">
+                                    <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1rem] h-[1rem]">
                                         <FontAwesomeIcon
                                             icon={isDarkMode ? faSun : faMoon}
                                             className="text-2xl"
@@ -149,28 +151,28 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[60%] h-full mt-20">
-                        <div className="flex flex-col gap-[5rem] px-10">
+                    <div className="min-[1025px]:w-[60%] h-full mt-20">
+                        <div className="flex flex-col gap-[5rem] px-5 min-[1025px]:px-10">
                             <div
                                 id="about"
                                 className="text-text/70 flex flex-col gap-5 font-[300]"
                             >
-                                <div>
-                                    I'm a full-stack software engineer with a
-                                    passion for building user-friendly
-                                    applications. With expertise in JavaScript,
-                                    React, Node.js, and MongoDB, I thrive in
-                                    both collaborative and independent
-                                    environments.
+                                <div className="text-text text-xl font-[500] mb-5">
+                                    About
                                 </div>
                                 <div>
-                                    During my time at the University of Texas at
-                                    San Antonio, I conducted undergraduate
-                                    research, developing a hardware system to
-                                    host an AI software program for traffic
-                                    crash notifications. My work led to
-                                    presentations at prestigious international
-                                    conferences, including
+                                    I'm a full-stack software engineer
+                                    passionate about creating user-friendly
+                                    applications that balance functionality and
+                                    design. With expertise in JavaScript, React,
+                                    Node.js, and MongoDB, I excel in both
+                                    collaborative and independent environments.
+                                </div>
+                                <div>
+                                    At the University of Texas at San Antonio, I
+                                    led research on a hardware system for
+                                    AI-driven traffic crash notifications,
+                                    presenting findings at conferences like
                                     <a
                                         href="https://icibm2022.iaibm.org/"
                                         target="_blank"
@@ -179,13 +181,12 @@ function App() {
                                         {" "}
                                         ICIBM 2022
                                     </a>
-                                    . This experience strengthened my
-                                    problem-solving skills and ability to
-                                    communicate complex ideas clearly.
+                                    . This experience enhanced my ability to
+                                    communicate complex ideas and approach
+                                    challenges with a problem-solving mindset.
                                 </div>
                                 <div>
-                                    In addition to research, I’ve worked on
-                                    several projects like
+                                    In projects like{" "}
                                     <a
                                         href="https://postack-40rm.onrender.com/"
                                         target="_blank"
@@ -194,12 +195,12 @@ function App() {
                                         {" "}
                                         Postack
                                     </a>
-                                    , a Reddit-inspired forum, where I refined
-                                    my skills in user authentication, database
-                                    management, and responsive design. I’m
-                                    always looking to optimize processes and
-                                    continue learning to stay ahead in the tech
-                                    world!
+                                    , a Reddit-inspired forum, I honed my skills
+                                    in user authentication, database management,
+                                    and responsive design, always striving to
+                                    optimize and innovate. I’m excited to apply
+                                    my skills to new challenges and make an
+                                    impact in the tech world.
                                 </div>
                             </div>
 
@@ -214,7 +215,7 @@ function App() {
                                         setHoveringExperienceCard(-1)
                                     }
                                 >
-                                    <div className="text-text text-3xl font-[500]">
+                                    <div className="text-text text-xl font-[500] mb-5">
                                         Experience
                                     </div>
                                     {experienceData.map((data, index) => {
@@ -271,7 +272,7 @@ function App() {
                                         setHoveringProjectCard(-1)
                                     }
                                 >
-                                    <div className="text-text text-3xl font-[500]">
+                                    <div className="text-text text-xl font-[500] mb-5">
                                         Projects
                                     </div>
                                     {projectData.map((data, index) => {
