@@ -35,10 +35,10 @@ const ProjectCard = ({
                 onMouseEnter={() => setHoveringProjectCard(projectId)}
                 onMouseLeave={() => setHoveringProjectCard(0)}
             >
-                <div className="min-[1025px]:w-[25%] mr-2">
+                <div className="min-[1025px]:w-[25%] mr-2 flex justify-center">
                     <img
                         src={projectImage}
-                        className={`aspect-square border-2 border-transparent group-hover:border-text transition-all duration-100 rounded-2xl`}
+                        className={`aspect-square max-h-[300px] border-2 border-transparent group-hover:border-text transition-all duration-100 rounded-2xl`}
                     />
                 </div>
                 <div className="min-[1025px]:w-[75%]">

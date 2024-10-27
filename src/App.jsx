@@ -111,9 +111,9 @@ function App() {
                             </div>
 
                             <div className="h-1/2 flex items-end justify-between mt-5 min-[1025px]:mt-0">
-                                <div className="flex gap-5">
+                                <div className="flex gap-3">
                                     <a
-                                        className="bg-highlightForeground p-3 rounded-full group"
+                                        className="hover:bg-highlightForeground p-3 rounded-full group"
                                         href="https://github.com/klupka"
                                         target="_blank"
                                     >
@@ -125,7 +125,7 @@ function App() {
                                         </div>
                                     </a>
                                     <a
-                                        className="bg-highlightForeground p-3 rounded-full group"
+                                        className="hover:bg-highlightForeground p-3 rounded-full group"
                                         href="https://www.linkedin.com/feed/"
                                         target="_blank"
                                     >
@@ -138,7 +138,7 @@ function App() {
                                     </a>
                                 </div>
                                 <button
-                                    className="border-2 border-highlightForeground p-3 rounded-full group overflow-hidden"
+                                    className="border-2 border-text/20 hover:bg-highlightForeground p-3 rounded-full group overflow-hidden"
                                     onClick={() => setIsDarkMode(!isDarkMode)}
                                 >
                                     <div className="group-hover:opacity-100 opacity-70 flex justify-center items-center gap-3 text-sm transition-opacity duration-200 ease-in-out text-text w-[1rem] h-[1rem]">
