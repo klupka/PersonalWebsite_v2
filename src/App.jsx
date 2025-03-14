@@ -60,7 +60,7 @@ function App() {
                                         Seth Klupka
                                     </div>
                                     <div className="text-lg font-[300] mt-2 text-text/70 leading-[1rem] xmt-1">
-                                        Web Application Developer
+                                        Junior Software Engineer
                                     </div>
                                     <div className="text-text/70 w-[20rem] font-[300] mt-1">
                                         {/* Passionate about creating impactful,
