@@ -161,18 +161,19 @@ function App() {
                                     About
                                 </div>
                                 <div>
-                                    I'm a full-stack software engineer
-                                    passionate about creating user-friendly
-                                    applications that balance functionality and
-                                    design. With expertise in JavaScript, React,
-                                    Node.js, and MongoDB, I excel in both
-                                    collaborative and independent environments.
+                                    I'm a junior software engineer who enjoys
+                                    building user-friendly applications. I
+                                    primarily work with JavaScript, React,
+                                    Node.js, and MongoDB, and I'm comfortable in
+                                    both collaborative and independent
+                                    environments.
                                 </div>
                                 <div>
                                     At the University of Texas at San Antonio, I
-                                    led research on a hardware system for
-                                    AI-driven traffic crash notifications,
-                                    presenting findings at conferences like
+                                    worked on research involving a hardware
+                                    system for AI-driven traffic crash
+                                    notifications, presenting findings at
+                                    conferences like
                                     <a
                                         href="https://icibm2022.iaibm.org/"
                                         target="_blank"
@@ -181,9 +182,9 @@ function App() {
                                         {" "}
                                         ICIBM 2022
                                     </a>
-                                    . This experience enhanced my ability to
-                                    communicate complex ideas and approach
-                                    challenges with a problem-solving mindset.
+                                    . This experience helped me develop my
+                                    problem-solving skills and communicate
+                                    complex ideas more effectively.
                                 </div>
                                 <div>
                                     In projects like{" "}
@@ -195,12 +196,11 @@ function App() {
                                         {" "}
                                         Postack
                                     </a>
-                                    , a Reddit-inspired forum, I honed my skills
-                                    in user authentication, database management,
-                                    and responsive design, always striving to
-                                    optimize and innovate. I’m excited to apply
-                                    my skills to new challenges and make an
-                                    impact in the tech world.
+                                    , I gained experience with user
+                                    authentication, database management, and
+                                    responsive design. I'm always looking to
+                                    improve my skills and take on new challenges
+                                    in tech.
                                 </div>
                             </div>
 
