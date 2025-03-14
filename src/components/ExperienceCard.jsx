@@ -46,7 +46,7 @@ const ExperienceCard = ({
                         className="text-xs ml-2 group-hover:translate-x-[25%] group-hover:translate-y-[-25%] group-hover:scale-125 transition-transform duration-200 ease-in-out text-text opacity-70 group-hover:opacity-100"
                     />
                 </div>
-                <div className="text-sm mt-2 text-text/70 font-[300]">
+                <div className="text-sm mt-2 text-text/70 font-[400]">
                     {jobDescription}
                 </div>
             </div>

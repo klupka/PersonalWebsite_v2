@@ -59,12 +59,12 @@ function App() {
                                     <div className="font-[600] leading-[3rem] min-[1025px]:text-[3.5rem] text-[2.25rem]">
                                         Seth Klupka
                                     </div>
-                                    <div className="text-lg font-[500] leading-[1rem] xmt-1">
-                                        Software Engineer
+                                    <div className="text-lg font-[300] mt-2 text-text/70 leading-[1rem] xmt-1">
+                                        Web Application Developer
                                     </div>
                                     <div className="text-text/70 w-[20rem] font-[300] mt-1">
-                                        Passionate about creating impactful,
-                                        user-friendly applications.
+                                        {/* Passionate about creating impactful,
+                                        user-friendly applications. */}
                                     </div>
                                 </div>
                                 <div className="italic flex-col items-start justify-center gap-2 w-full mt-10 hidden min-[1025px]:flex">
@@ -77,8 +77,8 @@ function App() {
                                         }}
                                         className={`px-4 py-3 w-full rounded-full text-left hover:bg-highlightForeground ${
                                             visibleSection === "about"
-                                                ? "bg-primary hover:bg-highlightPrimary font-[500]"
-                                                : "text-text/80 font-[300]"
+                                                ? "bg-primary hover:bg-highlightPrimary font-[400]"
+                                                : "text-text/80 font-[400]"
                                         }`}
                                     >
                                         About
@@ -89,8 +89,8 @@ function App() {
                                         }}
                                         className={`px-4 py-3 rounded-full w-full text-left hover:bg-highlightForeground ${
                                             visibleSection === "experience"
-                                                ? "bg-primary hover:bg-highlightPrimary font-[500]"
-                                                : "text-text/80 font-[300]"
+                                                ? "bg-primary hover:bg-highlightPrimary font-[400]"
+                                                : "text-text/80 font-[400]"
                                         }`}
                                     >
                                         Experience
@@ -101,8 +101,8 @@ function App() {
                                         }}
                                         className={`px-4 py-3 rounded-full w-full text-left hover:bg-highlightForeground ${
                                             visibleSection === "projects"
-                                                ? "bg-primary hover:bg-highlightPrimary font-[500]"
-                                                : "text-text/80 font-[300]"
+                                                ? "bg-primary hover:bg-highlightPrimary font-[400]"
+                                                : "text-text/80 font-[400]"
                                         }`}
                                     >
                                         Projects
@@ -155,7 +155,7 @@ function App() {
                         <div className="flex flex-col gap-[5rem] px-5 min-[1025px]:px-10">
                             <div
                                 id="about"
-                                className="text-text/70 flex flex-col gap-5 font-[300]"
+                                className="text-text/70 flex flex-col gap-5 font-[400]"
                             >
                                 <div className="text-text text-xl font-[500] mb-5">
                                     About
@@ -319,12 +319,12 @@ function App() {
                                     />
                                 </a>
                             </div>
-                            <div className="mb-20 text-text/40 font-light">
+                            <div className="mb-20 text-text/30 font-[400]">
                                 Designed and coded by Seth Klupka. Built with
                                 <a
                                     href="https://vite.dev/"
                                     target="_blank"
-                                    className="font-[400] hover:text-highlightSecondary text-text/60"
+                                    className="font-[400] hover:text-highlightSecondary text-text/45"
                                 >
                                     {" "}
                                     Vite
@@ -333,7 +333,7 @@ function App() {
                                 <a
                                     href="https://react.dev/"
                                     target="_blank"
-                                    className="font-[400] hover:text-highlightSecondary text-text/60"
+                                    className="font-[400] hover:text-highlightSecondary text-text/45"
                                 >
                                     {" "}
                                     React
@@ -342,7 +342,7 @@ function App() {
                                 <a
                                     href="https://tailwindcss.com/"
                                     target="_blank"
-                                    className="font-[400] hover:text-highlightSecondary text-text/60"
+                                    className="font-[400] hover:text-highlightSecondary text-text/45"
                                 >
                                     {" "}
                                     Tailwind CSS
@@ -351,7 +351,7 @@ function App() {
                                 <a
                                     href="https://pages.github.com/"
                                     target="_blank"
-                                    className="font-[400] hover:text-highlightSecondary text-text/60"
+                                    className="font-[400] hover:text-highlightSecondary text-text/45"
                                 >
                                     {" "}
                                     GitHub Pages
